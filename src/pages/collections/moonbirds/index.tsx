@@ -44,7 +44,7 @@ export default function HomePage() {
                   />
                   <input
                     value={router.query.search as string}
-                    placeholder="Search for index..."
+                    placeholder="Search..."
                     className="flex-1 rounded-md border border-gray-200 px-5 text-black"
                     onChange={(e) => {
                       const search = e.target.value;

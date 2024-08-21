@@ -13,7 +13,7 @@ export default function HomePage() {
   return (
     <>
       <Head>
-        <title>TWOO</title>
+        <title>The Wizards of Ord</title>
       </Head>
       <img
         src="/images/background.webp"
@@ -28,9 +28,9 @@ export default function HomePage() {
             <img
               src="/images/logos/twoo-logo.png"
               className="h-10 w-10 rounded-full md:h-12 md:w-12 "
-              alt="moon bird logo"
+              alt="The Wizards of Ord"
             />
-            Wizards
+            The Wizards of Ord
           </span>
         }
       >
@@ -51,7 +51,7 @@ export default function HomePage() {
                 />
                 <input
                   value={router.query.search as string}
-                  placeholder="Search for index..."
+                  placeholder="Search..."
                   className="w-full rounded-md border border-gray-200 px-5 text-black"
                   onChange={(e) => {
                     const search = e.target.value;

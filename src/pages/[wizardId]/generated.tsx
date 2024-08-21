@@ -35,7 +35,7 @@ function Generated() {
               className="h-12 w-12 rounded-full "
               alt="moon bird logo"
             />
-            Wizards
+            The Wizards of Ord
           </Link>
         }
       >

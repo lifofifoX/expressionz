@@ -28,9 +28,9 @@ export default function HomePage() {
             <img
               src="/images/logos/twoo-logo.png"
               className="h-10 w-10 rounded-full md:h-12 md:w-12 "
-              alt="moon bird logo"
+              alt="The Wizards of Ord"
             />
-            Wizards
+            The Wizards of Ord
           </span>
         }
       >
@@ -45,13 +45,13 @@ export default function HomePage() {
                 )}
               >
                 <Drawer
-                  text="Wizards"
+                  text="The Wizards of Ord"
                   logo="/images/logos/twoo-logo.png"
                   filterBox={<WizardsFilterTraits />}
                 />
                 <input
                   value={router.query.search as string}
-                  placeholder="Search for index..."
+                  placeholder="Search..."
                   className="w-full rounded-md border border-gray-200 px-5 text-black"
                   onChange={(e) => {
                     const search = e.target.value;

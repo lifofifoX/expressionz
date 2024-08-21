@@ -33,9 +33,9 @@ function Generated() {
             <img
               src="/images/logos/twoo-logo.png"
               className="h-12 w-12 rounded-full "
-              alt="moon bird logo"
+              alt="The Wizards of Ord"
             />
-            Wizards
+            The Wizards of Ord
           </Link>
         }
       >

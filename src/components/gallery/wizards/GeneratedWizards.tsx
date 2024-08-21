@@ -374,32 +374,6 @@ export default function GeneratedWizards({
               <div className=" flex h-full flex-col gap-2 pl-0 pr-3 lg:gap-1">
                 <div className="z-[2] mb-3 mt-8 flex h-fit items-center justify-between gap-4 2xl:gap-10">
                   <div className="flex items-center gap-2">
-                    {shareIcons.map((messenger, i) => (
-                      <ThemedIconButton
-                        key={i}
-                        wrapperClass="h-9 w-9"
-                        onClick={async () => {
-                          setSelectedEmojis([]);
-                          setSelectedType("");
-
-                          if (platform === messenger.platform)
-                            return setPlatform(EPlatform.NONE);
-
-                          setPlatform(messenger.platform);
-                        }}
-                        icon={
-                          <img
-                            src={
-                              platform == messenger.platform
-                                ? messenger.active
-                                : messenger.inactive
-                            }
-                            className="h-full w-full"
-                            alt={`${messenger.platform} icon`}
-                          />
-                        }
-                      />
-                    ))}
                   </div>
 
                   <div className=" flex-1">{getInstruction()}</div>
@@ -592,33 +566,6 @@ export default function GeneratedWizards({
           {/* Share and download icons */}
           <div className="mt-5 flex w-full items-center justify-between">
             <div className="flex items-center justify-between gap-3">
-              {shareIcons.map((messenger, i) => (
-                <button
-                  key={i}
-                  className="h-9 w-9 cursor-pointer"
-                  onClick={async () => {
-                    setSelectedEmojis([]);
-                    setSelectedType("");
-
-                    if (platform === messenger.platform) {
-                      setPlatform(EPlatform.NONE);
-                      return;
-                    }
-
-                    setPlatform(messenger.platform);
-                  }}
-                >
-                  <img
-                    src={
-                      platform == messenger.platform
-                        ? messenger.active
-                        : messenger.inactive
-                    }
-                    className="h-full w-full"
-                    alt={`${messenger.platform} icon`}
-                  />
-                </button>
-              ))}
             </div>
             <button
               onClick={downloadEmojis}
